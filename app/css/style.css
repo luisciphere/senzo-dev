@@ -140,3 +140,16 @@ header {
 .card-bottom-menu {
   margin-top: 25px;
 }
+.add-cart-zone {
+  cursor: pointer;
+}
+.add-card img {
+  width: 100px;
+}
+.add-card .add-card-descr {
+  color: #bfbfbf;
+  font-size: 20px;
+  font-family: 'Catamaran';
+  font-weight: normal;
+  margin-top: 10px;
+}
