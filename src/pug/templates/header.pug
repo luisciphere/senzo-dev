@@ -1,0 +1,59 @@
+mixin menubtn(name)
+  li
+    a.button(href="#") 
+      span= name  
+    
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title SenzoLive
+    link(rel="stylesheet", href="css/style.css")
+    script(src="https://use.fontawesome.com/d573432fa9.js")
+
+  body
+    header
+      .container-fluid
+        .row
+          .col-xs-4
+            .location-block.clearfix
+              .location-icon.pull-left
+                img(src="assets/images/location-icon.svg", alt="Location")
+              .location-name.pull-left
+                span Microsoft 
+          .col-xs-4
+            .header-logo
+              img(src="assets/images/header-logo.svg", alt="SenzoLive")     
+          .col-xs-4
+            .user-block
+              .user-icon.pull-right
+                img(src="assets/images/user-settings.svg", alt="Settings") 
+              .user-name.pull-right
+                span John Doe
+    .main-menu              
+      .container-fluid 
+        .row    
+          .col-md-12
+            .main-menu-left.pull-left
+              a.button.active(href="#") 
+                i.fa.fa-home(aria-hidden="true")
+                span  Overview   
+              a.button(href="#") 
+                i.fa.fa-bar-chart(aria-hidden="true")
+                span  Comparison  
+            .main-menu-time.pull-right
+              ul  
+                +menubtn("Today")
+                +menubtn("This Week")
+                +menubtn("This Month")
+                +menubtn("This Year")
+                +menubtn("Custom")
+                
+                
+
+         
+              
+    
