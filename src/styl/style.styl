@@ -2,125 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
-
-//Font variables
-rob = 'Roboto'
-cat = 'Catamaran'
-
-//Color variables
-bgrey = #585E66
-bgreen = #7EC443
-textgrey = #585858
-locationgreen = #AAD44C
-locationblue = #64ADEF
-
-
-//GLOBAL
-
-body
-  background #F6F7F9
-  font-family rob
-  color textgrey
-  padding-bottom 80px
-
-h1, h2, h3, h4, h5, h6
-  font-family 'Roboto'
-  margin 0
-  padding 0
-
-a:hover, a:focus, a:active
-  text-decoration none
-  color bgrey
-
-.button
-  font-family cat
-  font-size 16px
-  line-height 26px
-  color bgrey
-  border 1px solid #979797
-  border-radius 7px
-  padding 4px 10px 2px 10px
-  display block
-  float left
-  text-align center
-  transition all 0.3s
-
-.button-sm
-  font-family cat
-  font-size 16px
-  line-height 20px
-  color bgrey
-  border 1px solid #979797
-  border-radius 7px
-  padding 4px 10px 2px
-  text-align center
-  transition all 0.3s
-  display block
-  float right
-
-
-.button:hover, .button-sm:hover {
-  color bgreen
-  border 1px solid bgreen
-  transition all 0.3s
-}
-
-.button.active
-  background bgreen
-  border 1px solid bgreen
-  color #fff
-
-
-
-
-//HEADER
-
-header
-  height 62px
-  background #fff
-  box-shadow 0px 2px 3px 0px rgba(210, 210, 210, 0.5)
-
-.location-block
-  margin-top 18px
-
-.location-name
-  font-family cat
-  font-size 16px
-  line-height 33px
-  padding-left 6px
-  color bgrey
-
-.header-logo
-  width 200px
-  margin auto
-  margin-top 12px
-
-.user-block
-  margin-top 18px
-
-.user-icon img, .location-icon img
-  width 30px
-
-.user-name
-  font-family cat
-  font-size 16px
-  line-height 30px
-  padding-right 6px
-  color bgrey
-
-.main-menu
-  margin-top 16px
-
-.main-menu-left a:first-of-type
-  margin-right 10px
-
-.main-menu-time li
-  display block
-  float left
-  margin-right 10px
-
-.main-menu-time li:last-of-type
-  margin-right 0
+@require variables
+@require global
+@require header
 
 
 //Overview Card
@@ -133,6 +17,9 @@ header
   background #fff
   border-radius 20px
   box-shadow 0px 10px 14px 0px rgba(216, 216, 216, 0.5)
+
+  max-width 400px
+  margin auto
 
 .card-shape
   background #fff
@@ -165,6 +52,10 @@ header
 
 .add-cart-zone
   cursor pointer
+  height 683px
+  display flex
+  align-items center
+  justify-content center
 
 .add-card img
   width 100px
@@ -192,6 +83,15 @@ header
   font-size 12px
   line-height 12px
 
+.card-gauge-block
+  height 240px
+  background #c9c9c9
+  margin-top 20px
+
+.card-marks-block
+  margin-top 14px
+  height 120px
+  background #c9c9c9
 
 // Comparison
 

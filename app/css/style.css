@@ -116,6 +116,8 @@ header {
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 10px 14px 0px rgba(216,216,216,0.5);
+  max-width: 400px;
+  margin: auto;
 }
 .card-shape {
   background: #fff;
@@ -149,6 +151,10 @@ header {
 }
 .add-cart-zone {
   cursor: pointer;
+  height: 683px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .add-card img {
   width: 100px;
@@ -175,6 +181,16 @@ header {
   color: #fff;
   font-size: 12px;
   line-height: 12px;
+}
+.card-gauge-block {
+  height: 240px;
+  background: #c9c9c9;
+  margin-top: 20px;
+}
+.card-marks-block {
+  margin-top: 14px;
+  height: 120px;
+  background: #c9c9c9;
 }
 .comparison-wrapper {
   margin-top: 60px;
