@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>SenzoLive</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://use.fontawesome.com/d573432fa9.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="location-block clearfix">
+              <div class="location-icon pull-left"><img src="assets/images/location-icon.svg" alt="Location"/></div>
+              <div class="location-name pull-left"><span>Microsoft </span></div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="header-logo"><img src="assets/images/header-logo.svg" alt="SenzoLive"/></div>
+          </div>
+          <div class="col-xs-4">
+            <div class="user-block">
+              <div class="user-icon pull-right"><img src="assets/images/user-settings.svg" alt="Settings"/></div>
+              <div class="user-name pull-right"><span>John Doe</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-menu">             
+      <div class="container-fluid"> 
+        <div class="row">   
+          <div class="col-md-12">
+            <div class="main-menu-left pull-left"><a class="button active" href="#"> <i class="fa fa-home" aria-hidden="true"></i><span> Overview   </span></a><a class="button" href="#"> <i class="fa fa-bar-chart" aria-hidden="true"></i><span> Comparison  </span></a></div>
+            <div class="main-menu-time pull-right">
+              <ul> 
+                <li><a class="button" href="#"> <span>Today</span></a></li>
+                <li><a class="button" href="#"> <span>This Week</span></a></li>
+                <li><a class="button" href="#"> <span>This Month</span></a></li>
+                <li><a class="button" href="#"> <span>This Year</span></a></li>
+                <li><a class="button" href="#"> <span>Custom</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div class="comparison-wrapper">
+  <div class="container-fluid"> 
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="comparison-title-card card-shape text-center">
+          <h2>Comparison</h2>
+        </div>
+        <div class="comparison-stats-card card-shape">
+          <p>Peak: <span class="peak-value"> -15%</span></p>
+          <p>Average: <span class="average-value"> +20%  </span></p>
+          <p>Above High Mark: <span class="above-high-mark-value"> +10%  </span></p>
+          <p>Below Low Mark: <span class="below-low-mark-value"> +10%  </span></p>
+          <p class="comparison-export"><img src="/assets/images/export.svg"/></p>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="comparison-location-title-card card-shape">
+          <h2>Main Office<i class="fa fa-chevron-down" aria-hidden="true"></i></h2><a class="toggle-button"><img src="/assets/images/toggle.svg"/></a>
+          <h2>Second Office<i class="fa fa-chevron-down" aria-hidden="true">   </i></h2>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="the-card clearfix">
+          <h1 class="card-location">Main Office</h1>
+          <div class="card-buttons clearfix">
+            <div class="card-inner-location pull-left"><span>Meeting Rooms </span><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            <div class="card-nav pull-right"><a class="button-sm" href="#">LIVE </a><a class="button-sm nav-stats" href="#">Stats</a></div>
+          </div>
+          <div class="card-stats-numeric clearfix">
+            <div class="total-rooms-container text-center pull-left">
+              <div class="total-rooms-title"><span>Total Rooms</span></div>
+              <div class="total-rooms-number"><span>42</span></div>
+              <div class="total-rooms-inuse"><span id="rooms-inuse">12</span><span> in use   </span></div>
+            </div>
+            <div class="total-desks-container text-center pull-right">
+              <div class="total-desks-title"><span>Total Desks</span></div>
+              <div class="total-desks-number"><span>42</span></div>
+              <div class="total-desks-inuse"><span id="desks-inuse">12</span><span> in use   </span></div>
+            </div>
+          </div>
+          <div class="card-bottom-menu">
+            <div class="row">
+              <div class="col-xs-4 text-center"><a class="card-settings" href="#"><img src="assets/images/card-settings.svg"/></a></div>
+              <div class="col-xs-4 text-center"><a class="card-export" href="#"><img src="assets/images/export.svg"/></a></div>
+              <div class="col-xs-4 text-center"><a class="card-settings" href="#"><img src="assets/images/maintenance.svg"/>
+                  <div class="card-settings-sticker"><span class="maintenence-number">3            </span></div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="the-card clearfix">
+          <h1 class="card-location">Main Office</h1>
+          <div class="card-buttons clearfix">
+            <div class="card-inner-location pull-left"><span>Meeting Rooms </span><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            <div class="card-nav pull-right"><a class="button-sm" href="#">LIVE </a><a class="button-sm nav-stats" href="#">Stats</a></div>
+          </div>
+          <div class="card-stats-numeric clearfix">
+            <div class="total-rooms-container text-center pull-left">
+              <div class="total-rooms-title"><span>Total Rooms</span></div>
+              <div class="total-rooms-number"><span>42</span></div>
+              <div class="total-rooms-inuse"><span id="rooms-inuse">12</span><span> in use   </span></div>
+            </div>
+            <div class="total-desks-container text-center pull-right">
+              <div class="total-desks-title"><span>Total Desks</span></div>
+              <div class="total-desks-number"><span>42</span></div>
+              <div class="total-desks-inuse"><span id="desks-inuse">12</span><span> in use   </span></div>
+            </div>
+          </div>
+          <div class="card-bottom-menu">
+            <div class="row">
+              <div class="col-xs-4 text-center"><a class="card-settings" href="#"><img src="assets/images/card-settings.svg"/></a></div>
+              <div class="col-xs-4 text-center"><a class="card-export" href="#"><img src="assets/images/export.svg"/></a></div>
+              <div class="col-xs-4 text-center"><a class="card-settings" href="#"><img src="assets/images/maintenance.svg"/>
+                  <div class="card-settings-sticker"><span class="maintenence-number">3            </span></div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
