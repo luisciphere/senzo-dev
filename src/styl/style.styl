@@ -11,14 +11,17 @@ cat = 'Catamaran'
 bgrey = #585E66
 bgreen = #7EC443
 textgrey = #585858
+locationgreen = #AAD44C
+locationblue = #64ADEF
 
 
 //GLOBAL
 
 body
   background #F6F7F9
-  font-family 'Roboto'
+  font-family rob
   color textgrey
+  padding-bottom 80px
 
 h1, h2, h3, h4, h5, h6
   font-family 'Roboto'
@@ -222,3 +225,56 @@ header
   font-size 22px
   line-height 42px
   display inline-block
+
+
+// Graphs
+
+.comparison-graph-card
+  padding 22px 10px
+  margin-top 40px
+  min-height 400px
+
+.comparison-graph-card h2
+  font-size 22px
+  padding-left 70px
+
+.graph-options
+  font-size 18px
+  margin-right 40px
+
+.graph-options div
+  margin-right 24px
+
+.graph-options div:last-of-type
+  margin-right 0
+
+.the-graph //temporary styles for visual
+  background #D8D8D8
+  height 400px
+  margin-top 25px
+  margin-left 40px
+  margin-right 40px
+
+.the-graph-legend
+  display flex
+  justify-content center
+  margin-top 40px
+
+.legend-location-box
+  margin-right 20px
+
+.legend-location-color
+  height 40px
+  width 40px
+
+.location-color-green
+  background locationgreen
+
+.location-color-blue
+  background locationblue
+
+.legend-location-name
+  font-family cat
+  font-size 18px
+  margin-left 8px
+  padding-top 10px

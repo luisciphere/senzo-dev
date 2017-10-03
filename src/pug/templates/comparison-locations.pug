@@ -1,10 +1,15 @@
 .col-sm-8
   .comparison-location-title-card.card-shape
-    h2 Main Office
-      i.fa.fa-chevron-down(aria-hidden="true")
-    a.toggle-button
-      img(src="/assets/images/toggle.svg")    
-    h2 Second Office
-      i.fa.fa-chevron-down(aria-hidden="true")    
-include card-default.pug      
-include card-default.pug
+    .row
+      .col-md-4.text-center 
+        h2 Main Office
+          i.fa.fa-chevron-down(aria-hidden="true")
+      .col-md-4.text-center  
+        a.toggle-button
+          img(src="/assets/images/toggle.svg")
+      .col-md-4.text-ceter      
+        h2 Second Office
+          i.fa.fa-chevron-down(aria-hidden="true")  
+  
+include card-comparison.pug      
+include card-comparison.pug

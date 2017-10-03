@@ -1,0 +1,23 @@
+mixin comparioson-stat-mixin(title)
+  .col-sm-12
+    .comparison-graph-card.card-shape.clearfix
+      .graph-header.clearfix
+        h2.pull-left=title
+        .graph-options.pull-right.clearfix
+          .graph-options-average.pull-left
+            span Average 
+            i.fa.fa-chevron-down(aria-hidden="true")    
+          .graph-options-occupancy.pull-left
+            span Occupancy 
+            i.fa.fa-chevron-down(aria-hidden="true")
+      .the-graph.clearfix     
+      .the-graph-legend
+        .legend-location-box.pull-left
+          .legend-location-color.location-color-green.pull-left
+          .legend-location-name.pull-left Location 1 
+        .legend-location-box.pull-left
+          .legend-location-color.location-color-blue.pull-left
+          .legend-location-name.pull-left Location 2     
+      
+
+    
