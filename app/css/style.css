@@ -153,3 +153,19 @@ header {
   font-weight: normal;
   margin-top: 10px;
 }
+.card-settings-sticker {
+  background: #ff6868;
+  border-radius: 100px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -5px;
+  right: 36px;
+  line-height: 16px;
+}
+.maintenence-number {
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+}
