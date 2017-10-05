@@ -44,7 +44,6 @@ a:active {
   text-align: center;
   transition: all 0.3s;
   display: block;
-  float: right;
 }
 .button:hover,
 .button-sm:hover {

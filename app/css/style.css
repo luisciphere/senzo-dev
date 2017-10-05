@@ -47,7 +47,6 @@ a:active {
   text-align: center;
   transition: all 0.3s;
   display: block;
-  float: right;
 }
 .button:hover,
 .button-sm:hover {
@@ -272,4 +271,24 @@ header {
   font-size: 18px;
   margin-left: 8px;
   padding-top: 10px;
+}
+.stats-title h1 {
+  font-size: 24px;
+}
+.stats-select {
+  padding-top: 4px;
+  padding-left: 30px;
+}
+.stats-export img {
+  width: 27px;
+}
+.stats-header-wrapper {
+  padding-top: 20px;
+  background: #fff;
+}
+.stats-live-btn {
+  margin-left: 30px;
+}
+.stats-export {
+  margin-left: 30px;
 }
