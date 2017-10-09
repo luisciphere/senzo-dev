@@ -25,10 +25,16 @@
   background #fff
   border-radius 20px
   box-shadow 0px 10px 14px 0px rgba(216, 216, 216, 0.5)
+  max-width 1200px
+  margin auto
 
 .card-location
   text-align center
   font-size 28px
+
+.card-inner-location
+  font-size 16px
+  position relative
 
 .nav-stats
   margin-right 10px
@@ -56,6 +62,7 @@
   display flex
   align-items center
   justify-content center
+  margin-top 18px
 
 .add-card img
   width 100px
@@ -126,6 +133,18 @@
   line-height 42px
   display inline-block
 
+.toggle-button img
+  width 32px
+  padding-top 6px
+
+.comparison-first-location, .comparison-second-location
+  width 45%
+  float left
+
+.toggle-wrapper
+  width 10%
+  float left
+
 
 // Graphs
 
@@ -134,9 +153,19 @@
   margin-top 40px
   min-height 400px
 
+.stats-graph-card
+  padding 28px 10px 60px
+  margin-top 40px
+  min-height 400px
+
 .comparison-graph-card h2
   font-size 22px
   padding-left 70px
+
+.stats-graph-card h2
+  font-size 28px
+  padding-left 70px
+  text-align center
 
 .graph-options
   font-size 18px
@@ -191,7 +220,9 @@
 
 .stats-select
   padding-top 4px
-  padding-left 30px
+  margin-left 30px
+  font-size 16px
+  position relative
 
 .stats-export img
   width 27px
@@ -200,6 +231,12 @@
   padding-bottom 10px
   background #fff
   box-shadow 0px 2px 3px 0px rgba(210, 210, 210, 0.5)
+
+
+#sticky-header
+  z-index 999
+  width 100%
+  transition all 0.3s
 
 .stats-live-btn
   margin-left 30px

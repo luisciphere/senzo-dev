@@ -20,4 +20,15 @@ mixin menubtn(name)
             +menubtn("This Week")
             +menubtn("This Month")
             +menubtn("This Year")
-            +menubtn("Custom")
+            li.datepicker-parent
+              a.button.active.custom-time(href="#")
+                span Custom
+              .datepicker
+                input(type="text" placeholder="01.01.2017").start-date.pull-left
+                .date-divider.pull-left -
+                input(type="text" placeholder="01.10.2017").end-date.pull-left
+                .datepicker-circle
+                a.timepicker-icon.pull-left
+                  img(src="assets/images/icon-clock.svg")  
+                    
+                      

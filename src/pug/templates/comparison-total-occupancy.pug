@@ -17,7 +17,22 @@ mixin comparioson-stat-mixin(title)
           .legend-location-name.pull-left Location 1 
         .legend-location-box.pull-left
           .legend-location-color.location-color-blue.pull-left
-          .legend-location-name.pull-left Location 2     
+          .legend-location-name.pull-left Location 2   
+          
+mixin stat-card-mixin(title)
+  .col-sm-12
+    .stats-graph-card.card-shape.clearfix
+      .graph-header.clearfix
+        h2=title
+        //.graph-options.pull-right.clearfix
+          .graph-options-average.pull-left
+            span Average 
+            i.fa.fa-chevron-down(aria-hidden="true")    
+          .graph-options-occupancy.pull-left
+            span Occupancy 
+            i.fa.fa-chevron-down(aria-hidden="true")
+      .the-graph.clearfix     
+            
       
 
     

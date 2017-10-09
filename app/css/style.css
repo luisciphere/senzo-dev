@@ -59,6 +59,34 @@ a:active {
   border: 1px solid #7ec443;
   color: #fff;
 }
+.dropdown {
+  background: #fff;
+  border-top: 3px solid #7ec443;
+  box-shadow: 0px 2px 3px 0px rgba(210,210,210,0.5);
+  padding: 10px 10px;
+  position: absolute;
+  width: 100%;
+  top: 25px;
+  z-index: 9999;
+}
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.dropdown ul li {
+  margin-bottom: 3px;
+}
+.dropdown a {
+  color: #585858;
+}
+.all-areas a {
+  color: #959aa2;
+}
+.stats-area-dropdown {
+  top: 30px;
+}
 header {
   height: 62px;
   background: #fff;
@@ -107,6 +135,63 @@ header {
 .main-menu-time li:last-of-type {
   margin-right: 0;
 }
+.datepicker-parent {
+  position: relative;
+}
+.datepicker {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  background: #fff;
+  height: 60px;
+  width: 300px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(142,142,142,0.5);
+  -moz-box-shadow: 0px 4px 12px 0px rgba(142,142,142,0.5);
+  box-shadow: 0px 4px 12px 0px rgba(142,142,142,0.5);
+  border-radius: 16px;
+  padding-top: 15px;
+  padding-left: 14px;
+}
+.datepicker-circle {
+  background: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 8px;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  transform: rotate(90deg);
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(142,142,142,0.5);
+  -moz-box-shadow: 0px 4px 12px 0px rgba(142,142,142,0.5);
+  box-shadow: 0px 4px 12px 0px rgba(142,142,142,0.5);
+  z-index: -1;
+}
+.start-date,
+.end-date {
+  color: #585858;
+  font-family: 'Roboto';
+  font-size: 14px;
+  width: 109px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background: url("../assets/images/calendar.svg") no-repeat;
+  background-position: 85px 6px;
+}
+.start-date:focus,
+.end-date:focus {
+  outline-color: #7ec443;
+}
+.date-divider {
+  color: #585858;
+  margin: -4px 10px 0;
+  font-size: 30px;
+}
+.timepicker-icon {
+  margin-left: 8px;
+  margin-top: 4px;
+}
 .overview-block {
   margin-top: 60px;
 }
@@ -122,10 +207,16 @@ header {
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 10px 14px 0px rgba(216,216,216,0.5);
+  max-width: 1200px;
+  margin: auto;
 }
 .card-location {
   text-align: center;
   font-size: 28px;
+}
+.card-inner-location {
+  font-size: 16px;
+  position: relative;
 }
 .nav-stats {
   margin-right: 10px;
@@ -154,6 +245,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 18px;
 }
 .add-card img {
   width: 100px;
@@ -222,14 +314,37 @@ header {
   line-height: 42px;
   display: inline-block;
 }
+.toggle-button img {
+  width: 32px;
+  padding-top: 6px;
+}
+.comparison-first-location,
+.comparison-second-location {
+  width: 45%;
+  float: left;
+}
+.toggle-wrapper {
+  width: 10%;
+  float: left;
+}
 .comparison-graph-card {
   padding: 22px 10px;
+  margin-top: 40px;
+  min-height: 400px;
+}
+.stats-graph-card {
+  padding: 28px 10px 60px;
   margin-top: 40px;
   min-height: 400px;
 }
 .comparison-graph-card h2 {
   font-size: 22px;
   padding-left: 70px;
+}
+.stats-graph-card h2 {
+  font-size: 28px;
+  padding-left: 70px;
+  text-align: center;
 }
 .graph-options {
   font-size: 18px;
@@ -280,7 +395,9 @@ header {
 }
 .stats-select {
   padding-top: 4px;
-  padding-left: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  position: relative;
 }
 .stats-export img {
   width: 27px;
@@ -289,6 +406,11 @@ header {
   padding-bottom: 10px;
   background: #fff;
   box-shadow: 0px 2px 3px 0px rgba(210,210,210,0.5);
+}
+#sticky-header {
+  z-index: 999;
+  width: 100%;
+  transition: all 0.3s;
 }
 .stats-live-btn {
   margin-left: 30px;

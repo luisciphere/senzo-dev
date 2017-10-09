@@ -1,8 +1,11 @@
-.container-fluid
-  .row
-    .col-md-12
-      include comparison-total-occupancy.pug
-      +comparioson-stat-mixin('Total Occupancy Comparison')
-      +comparioson-stat-mixin('Total Occupancy Comparison')
-      +comparioson-stat-mixin('Total Occupancy Comparison')
+.stats-body#stats-body
+  .container-fluid
+    .row
+      .col-md-12
+        include comparison-total-occupancy.pug
+        +stat-card-mixin('Total Occupancy')
+        +stat-card-mixin('Occupancy Range')
+        +stat-card-mixin('Occupancy Breakdown')
+        +stat-card-mixin('Daily Occupancy: All Weekdays')
+        +stat-card-mixin('Daily Occupancy')
       

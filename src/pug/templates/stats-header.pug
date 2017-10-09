@@ -1,5 +1,5 @@
-.stats-header-wrapper
-  include main-menu.pug
+#sticky-header.stats-header-wrapper
+  include main-menu-stats.pug
   .stats-menu      
     .container-fluid
       .row
@@ -8,10 +8,25 @@
             h1 Main Office
           .stats-room-select.stats-select.pull-left
             span Meeting Rooms 
+            .dropdown.stats-area-dropdown
+              ul
+                li 
+                  a(href="#") Working Areas
+                li 
+                  a(href="#") Meeting Rooms
+                li.all-areas 
+                  a(href="#") All areas  
             i.fa.fa-chevron-down(aria-hidden="true")  
           .stats-occupancy-select.stats-select.pull-left
             span Occupancy 
+            .dropdown.occupancy-area-dropdown
+              ul
+                li 
+                  a(href="#") Occupancy
+                li 
+                  a(href="#") Efficiency
             i.fa.fa-chevron-down(aria-hidden="true")  
           a.stats-live-btn.button-sm.pull-left(href="#") LIVE
           a.stats-export.pull-left(href="#")
             img(src="assets/images/export.svg")
+              
