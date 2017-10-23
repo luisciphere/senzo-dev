@@ -1,0 +1,18 @@
+include pug/templates/login-header.pug
+.login-wrapper
+  .login-card.text-center
+    img.login-logo(src="assets/images/header-logo.svg")
+    h2.welcome-message Welcome to Senzo Live!
+    form
+      .user_email
+        input(type="email" placeholder="Email" name="user_email")
+      .user_password  
+        input(type="password" placeholder="Password" name="user_password")
+      .keep_me_logged_in  
+        input(type="checkbox" name="keep_me_logged_in")
+        span Keep me logged in
+      .user_submit  
+        input(type="submit" name="user_submit" value="Log in") 
+        
+      .forgot-password
+        a(href="#") Forgot your password?   

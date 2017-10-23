@@ -1,0 +1,11 @@
+include pug/templates/login-header.pug
+.login-wrapper
+  .login-card.text-center
+    h2.recover-message There seems to be no account using this email! 
+    h2.recover-message Send a message to your company’s administrator. 
+    form
+      .user_email
+        input(type="email" placeholder="Email" name="user_email")
+      .user_submit  
+        input(type="submit" name="user_submit" value="Send") 
+        
