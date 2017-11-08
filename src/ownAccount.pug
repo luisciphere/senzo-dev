@@ -1,0 +1,40 @@
+include pug/templates/header.pug
+.settings-wrapper
+  .container-fluid
+    .row
+      .col-md-12
+        h2.account-title Own Account
+
+        form.account-form
+          .account-email
+            label Email Address
+            input(type="email" placeholder="jamesbond@gmail.com" disabled) 
+          .account-username
+            label Username
+            input(type="text" placeholder="john1993")  
+          .account-title
+            label Title
+            select
+              option(value="mr" default) Mr
+              option(value="ms") Ms 
+          .account-firstname
+            label First Name    
+            input(type="text" placeholder="John") 
+          .account-lastname
+            label Last Name    
+            input(type="text" placeholder="Doe") 
+          .account-phone
+            label Phone    
+            input(type="tel" placeholder="+0 000 000 00 00")
+          .account-position
+            label Position
+            input(type="text" placeholder="Administrator") 
+          .account-location
+            label Location
+            select
+              option(value="montreal") Montreal    
+              option(value="moscow") Moscow
+          .account-change-password
+            a.chpwd Change Password    
+          .account-submit
+            input.disabled(type="submit" value="Save Changes")    

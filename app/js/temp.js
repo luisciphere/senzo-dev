@@ -32,5 +32,8 @@ $( document ).ready(function() {
         occupancy_area.slideUp();
       }
     });
+    
+    //hide locations dropdown
+    $('.location-dropdown-root').hide();
 
-});
+}); //end ready

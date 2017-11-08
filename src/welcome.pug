@@ -1,0 +1,40 @@
+include pug/templates/header.pug
+.settings-wrapper
+  .container-fluid
+    .row
+      .col-md-12
+        h2.account-title Welcome to SenzoLive!
+        p Bob Dylan has added you as a Local user in Finland.
+          br
+          span Please fill in following information to finalize your account.
+        form.account-form.welcome-form
+          .account-email
+            label Email Address
+            input(type="email" placeholder="jamesbond@gmail.com" disabled) 
+          .account-username
+            label Username
+            input(type="text")  
+          .account-title
+            label Title
+            select
+              option(value="mr" default) Mr
+              option(value="ms") Ms 
+          .account-firstname
+            label First Name    
+            input(type="text") 
+          .account-lastname
+            label Last Name    
+            input(type="text") 
+          .account-phone
+            label Phone    
+            input(type="tel")
+          .account-position
+            label Position
+            input(type="text") 
+          .account-location
+            label Location
+            select
+              option(value="montreal") Montreal    
+              option(value="moscow") Moscow
+          .account-submit
+            input(type="submit" value="Sign Up")    
